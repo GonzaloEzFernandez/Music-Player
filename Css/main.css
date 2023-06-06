@@ -24,18 +24,17 @@ main {
 
 main h1 {
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 65px;
     color: white;
     font-style: oblique;
     display: flex;
     justify-content: center;
 }
 
-.cover {
-    background-color: red;
+#cover {
     width: 40rem;
     height: 30rem;
-    border: solid 5px black;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 80px;
     margin: 60px;    
 }
@@ -49,7 +48,7 @@ main h1 {
 
 .progress-bar .progress {
     background-color: black;
-    width: 50%;
+    width: 0;
     height: 100%;   
 }
 .controls {
@@ -58,7 +57,7 @@ main h1 {
     justify-content: space-evenly;
     align-items: center;
     border: none;
-    
+    padding: 0.8rem;
 }
 
 .controls button {
@@ -67,12 +66,10 @@ main h1 {
     cursor: pointer;
 }
 
-.controls .next img,
-.controls .back img,
-.controls .play img {
-    width: 85px;
-    height: 85px;
+.controls button i  {
+    font-size: 5rem;  
 }
+
 main ul {
     height: 400px;
     list-style-type: none;
@@ -83,17 +80,21 @@ main ul {
     
     
 }
-main li a {
+.songs a.active {
+    color: white;
+    font-weight: bold;
+}
+ main li a {
     font-size: 70px;
     font-style: oblique;
     text-decoration: none;
     color: white;
 }
 
- main li {
+  main li {
     transition: 0.4s;
 } 
 main li:hover {
     transform: scale(1.04);
     
-}
+} 
